@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>O p E n   U p   Y o U r   E y E s</title>
+<meta charset="utf-8" />
+<meta name="description" content="O p E N   U p   Y o U r   E y E s" />
+<meta name="copyright" content="Why the fuck would I copyright this" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="keywords" content="mlp, my little pony, brony, open up your eyes, meme, stupid, eyes, googly, googly eyes, spin me right round, spin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" href="favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="canonical" href="http://cloudhop.horse/openupyoureyes/">
+
+  <meta property="og:title" content="O p E N   U p   Y o U r   E y E s" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="mlp, my little pony, brony, open up your eyes, meme, stupid, eyes, googly, googly eyes, spin me right round, spin" />
+  <meta property="og:url" content="http://cloudhop.horse/openupyoureyes/" />
+  <meta property="og:keywords" content="mlp, my little pony, brony, open up your eyes, meme, stupid, eyes, googly, googly eyes, spin me right round, spin" />
+  <meta property="og:image" content="http://cloudhop.horse/openupyoureyes/openupyoureyes_thumb.png" />
+  <meta property="og:locale" content="en-US" />
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="O p E N   U p   Y o U r   E y E s">
+  <meta name="twitter:description" content="O p E N   U p   Y o U r   E y E s">
+  <meta name="twitter:image" content="http://cloudhop.horse/openupyoureyes/openupyoureyes_thumb.png" />
+  <style>
+  html, body { margin:0; padding:0; overflow:hidden;color:#fff;font-size:16px; }
+  </style>
+</head>
+<body>
+<img id="l" src="openupyoureyes_1.png" alt="" width="100%" style="position:absolute;transform-origin: 41.679% 29.722%;"/>
+<img id="r" src="openupyoureyes_2.png" alt="" width="100%" style="position:absolute;transform-origin: 48.398% 29.346%;"/>
+<img src="openupyoureyes_base.png" alt="" width="100%" style="position:absolute;"/>
+<div id="wrap" style="position:absolute;width:100%;"><div style="text-align:center;position:absolute;font: 900 small-caps italic 5em/2.2em Georgia, sans-serif;letter-spacing:16px;width:100%;">OpEn Up YoUr EyEs</div></div>
+
+<script>
+"use strict"
+var l = document.getElementById('l');
+var r = document.getElementById('r');
+var wrap = document.getElementById('wrap');
+var pi2 = Math.PI*2;
+
+function spin(t) {
+  var rot = (t/240)%pi2;
+  l.style.transform = 'rotate(' + (rot) + 'rad)';
+  r.style.transform = 'rotate(' + (-rot) + 'rad)';
+  window.requestAnimationFrame(spin);
+}
+
+function doResize() {
+  var ratio = (window.innerWidth/2560)*100;
+  wrap.style.fontSize = ratio + "%";
+}
+
+doResize();
+window.addEventListener("resize", doResize);
+window.requestAnimationFrame(spin);
+</script>
+</body>
+</html>
